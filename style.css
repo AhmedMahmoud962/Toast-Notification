@@ -6,7 +6,19 @@
 }
 
 .buttons-toast {
-  margin: 50 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px;
+  transform: translateX(100%);
+  animation: moveright 2s linear forwards;
+}
+
+@keyframes moveright {
+  100% {
+    transform: translateX(0%);
+
+  }
 }
 
 .buttons-toast button {
@@ -19,6 +31,7 @@
   height: 40px;
   margin: 5px;
   cursor: pointer;
+
 }
 
 #toastBox {
